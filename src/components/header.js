@@ -7,8 +7,8 @@ export const Header = () => {
         //     name: 'Home'
         // },
         // {
-        //     link: '/about',
-        //     name: 'About'
+        //     link: '/dashboard',
+        //     name: 'Dashboard'
         // },
         // {
         //     link: '/contacts',

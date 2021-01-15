@@ -1,8 +1,9 @@
 import {createElement} from "../react";
 import { logIn } from "./logIn";
-import { About } from "./about";
+import { Dashboard } from "./dashboard";
 import { Contact } from "./contact";
 import { signup } from './signup';
+
 export const Layout = ()=> {
     const renderLayout = (page) => createElement(
         "div",
@@ -15,8 +16,8 @@ export const Layout = ()=> {
 if (location.pathname === "/"){
     return renderLayout(logIn());
 }
-else if (location.pathname === "/about"){
-    return renderLayout(About());
+else if (location.pathname === "/dashboard"){
+    return renderLayout(Dashboard());
 }
 else if (location.pathname === "/contacts"){
     return renderLayout(Contact());

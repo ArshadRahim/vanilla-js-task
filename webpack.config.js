@@ -1,8 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-
+// const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 /*
  * SplitChunksPlugin is enabled by default and replaced
@@ -62,7 +61,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'public/index.html'
-    })
+    }),
+  //   new GoogleFontsPlugin({
+  //     fonts: [
+  //         { family: "Source Sans Pro" },
+  //         { family: "Roboto", variants: [ "400", "700italic" ] }
+  //     ]
+  //     /* ...options */
+  // }),
+    
   ],
 
   module: {
