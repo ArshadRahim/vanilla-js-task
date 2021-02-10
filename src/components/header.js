@@ -1,37 +1,83 @@
 import { createElement } from '../react';
 
 export const Header = () => {
-    const menuItems = [
-        // {
-        //     link: '/',
-        //     name: 'Home'
-        // },
-        // {
-        //     link: '/dashboard',
-        //     name: 'Dashboard'
-        // },
-        // {
-        //     link: '/contacts',
-        //     name: 'Contacts'
-        // },
-        // {
-        //     link: '/signup',
-        //     name: 'signup'
-        // },
-    ]
-    const list = [];
+    
 
-    menuItems.forEach(item => {
-        const liProps = {
-            onclick: () => {
-                window.location.pathname = item.link;
-            },
-            style: "padding: 5px 15px; border: 1px solid #ddd; margin: 5px; display: inline-block; background-color: maroon; cursor:pointer; font-weight:bolder; color:white;"
+    let click =(link)=>({
+        onclick:()=>{
+            window.location.pathname = link;
         }
-        const li = createElement('li', liProps, item.name);
-        list.push(li);
     })
 
-    const menus = createElement('ul', null, list);
-    return createElement('header', null, menus);
+    let navbar =[
+        {   
+            link:"/home",
+            name:"Home",
+            props:{
+                class: "fa fa-home"
+            }
+        },
+        {   
+            link:"/messages",
+            name:"Message",
+            props:{
+                class: "fab fa-facebook-messenger"
+            }
+        },
+        {   
+            link:"/explore",
+            name:"Explore",
+            props:{
+                class: "far fa-compass",
+                
+            }
+        },
+        {   
+            link:"/likes",
+            name:"Likes",
+            props:{
+                class: "far fa-heart",
+            
+                
+            }
+        },
+        {   
+            link:"/profile",
+            name:"profile",
+            props:{
+                src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSsp4zkAkrip4TTzHAT3GHMCNZ5vR1VMCSA&usqp=CAU",
+                width:"24px", height:"24px", padding:"1px"
+
+            }
+        }
+    ]
+
+    let list =[];
+
+    navbar.forEach( (item)=>{
+
+        if(item.link === "/profile"){
+            
+        let img = createElement('img',{ class:"header-profile-image", ...click(item.link),...item.props})
+        list.push(img)
+        }else{
+            
+        let i = createElement('i',{ class:"header-icons", ...click(item.link), ...item.props})
+        list.push(i)
+        }
+
+    } )
+
+
+    const imageInsta = createElement('img', {class:"insta-img", src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJUjiTX51GbOltIaxmJE7Zk1Xjx1Sa2Q7sw&usqp=CAU"},)
+    const searchbar = createElement('input', {class:"searchInput", placeholder:"Search"},)
+
+    let instaImageDiv = createElement('div', null, imageInsta);
+    let searchbarDiv = createElement('div', {class:"searchbar-div"}, searchbar);
+
+    
+    const menus = createElement('ul', {class:"menuList"},list);
+    return createElement('header', {class:"main-header"}, instaImageDiv,searchbarDiv,menus, );
+
+    
 };

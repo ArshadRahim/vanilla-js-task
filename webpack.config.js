@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 // const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 /*
@@ -54,6 +55,17 @@ module.exports = {
     compress: true,
     port: 9000
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'assets',
+        },
+      },
+    ],
+  },
 
   plugins: [
     new webpack.ProgressPlugin(),
@@ -94,6 +106,7 @@ module.exports = {
         },
       },
     ],
+    
   },
 
   optimization: {

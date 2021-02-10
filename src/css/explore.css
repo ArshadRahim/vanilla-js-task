@@ -1,0 +1,73 @@
+
+.pics-container{
+position: relative;
+}
+.icons-div{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.icons-div .icon-1{
+    
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    
+}
+
+.icons-div .icon-2{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.icons-div:hover{
+    opacity: 1;
+    background-color: rgb(0, 0,0);
+    background-color: rgba(0, 0,0, 0.3);
+
+}
+.icons-div i {
+    color:white;
+}
+
+
+/* .icons-div .far fa-heart{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+} */
+
+.pics-container img{
+    width: 300px;
+
+}
+.pics-container img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+
+.explore-main{
+    margin: auto;
+    
+    
+}
+.explore-page{
+    padding: 3em 0em;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    /* column-gap: 6px; */
+    
+}

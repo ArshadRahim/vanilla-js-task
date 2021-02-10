@@ -11,8 +11,8 @@ export let logIn = () => {
     createElement('form',{class: "login-form"},
     createElement('img',{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJUjiTX51GbOltIaxmJE7Zk1Xjx1Sa2Q7sw&usqp=CAU"}),
     createElement('input',{placeholder:"Phone number, username or email"}),
-    createElement('input',{placeholder:"Password"}),
-    createElement('a',{class: "btn btn-primary", href:"http://localhost:9000/dashboard"}, "Log In"),
+    createElement('input',{placeholder:"Password", inputType:"password"}),
+    createElement('a',{class: "btn btn-primary", href:"http://localhost:9000/save-your-info/"}, "Log In"),
     createElement('h3',{class: "login-alternative" , }, "or"),
 
     createElement('i',{class:"fab fa-facebook"}),
@@ -38,60 +38,6 @@ createElement('img',{src:"https://www.instagram.com/static/images/appstore-insta
 )
 };
 logIn()
-    // export let footer = () => {
-
-    //     return createElement('div', {class:"footer"},
-    //     createElement('ul',{class:"footer-ul"},
-    //     createElement('li',{class:"footer-li"}, "Blog"),
-    //     createElement('li',{class:"footer-li"}, "contacts"),
-    //     createElement('li',{class:"footer-li"}),
-    //     createElement('li',{class:"footer-li"}),
-    //     ))
-
-    // };
-
-
-
-
-//     const rootElem = document.getElementById('root');
-//     let createform = document.createElement('form',) ;
-//     rootElem.append(createform);
-    
-//     let heading = document.createElement('h1'); 
-//     heading.innerHTML = "Instagram";
-//     createform.appendChild(heading);
-    
-//     let nameInput = document.createElement('input');
-//     createform.appendChild(nameInput, );
-
-    
-    
-//     let passwordInput = document.createElement('input');
-//     createform.appendChild(passwordInput);
-    
-    
-//     let loginButton = document.createElement('button');
-//     loginButton.innerHTML = "Log in";
-//     createform.appendChild(loginButton);
-    
-//     let textelement = document.createElement('h3');
-//     textelement.innerHTML = "--------  OR  -------- ";
-//     createform.appendChild(textelement);
-//     textelement.style.opacity = '0.5';
-    
-    
-    
-//     let facebookLogin = document.createElement('a');
-//     facebookLogin.innerHTML = "Log in with Facebook"
-//     createform.appendChild(facebookLogin);
-
-    
-//     let forgotPassword = document.createElement('a');
-//     forgotPassword.innerHTML = "Forgot Password ? "
-//     createform.appendChild(forgotPassword);
-    
-
-// createElement('div', {class: "Hello"}, Hello);
 
 
 

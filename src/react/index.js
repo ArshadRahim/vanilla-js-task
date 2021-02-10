@@ -1,4 +1,4 @@
-    export const createElement = (elementType, props, ...children) => {
+        export const createElement = (elementType, props, ...children) => {
     const element = document.createElement(elementType);
     children.forEach(child => {
         if(typeof child === 'object') {
@@ -15,6 +15,9 @@
     })
     return handleProps(element, props);
 }
+
+
+
 
 const handleProps = (element, props) => {
     if(props) {
@@ -36,3 +39,4 @@ export const reactDOM = {
         rootElement.appendChild(element);
     }
 }
+

@@ -1,0 +1,87 @@
+
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: 60px;
+}
+
+#main-outer{
+
+    margin: auto;
+    height: 80vh;
+    width: 100%;
+}
+
+
+/* Form section*/
+
+.save-your-info{
+    height: 80vh;
+    margin-top: 50px;
+    
+}
+
+.saveyourinfo-form-container{
+    background-color: white;
+    width: 26%;
+    border: .6px solid rgb(223, 221, 221);
+    margin: auto;
+    text-align: center;
+}
+
+.saveyourinfo-form{
+    margin: auto;
+    width: 68%;
+}
+
+.saveyourinfo-form i {
+    margin-top: .4em;
+    font-weight: normal;
+    font-size: 4em;
+    color: rgb(68, 68, 68);
+}
+
+.saveyourinfo-form h3{
+    font-size: 16px;
+    color: rgb(55, 53, 53);
+}
+
+.saveyourinfo-form p {
+    color:#8e8e8e;
+
+}
+
+.save-info-button{
+    display: block;
+    width: 100%;
+    height: 22px;
+    border: 1px solid transparent;
+    background-color: #0095f6;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+
+}
+
+.save-info-button-secondary{
+    display: block;
+    width: 100%;
+    height: 22px;
+    border: 1px solid transparent;
+    color: #0095f6;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+
+}

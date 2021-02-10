@@ -19,7 +19,7 @@ export let signup = () => {
     createElement('input',{placeholder:"Username"}),
     createElement('input',{placeholder:"Password"}),
 
-    createElement('a', {class:"btn btn-primary btn-signUp", href:"http://localhost:9000/dashboard"},
+    createElement('a', {class:"btn btn-primary btn-signUp", href:"http://localhost:9000/saveyourinfo"},
     "Sign up"),
     
     createElement('p', {class:"terms"},"By signing up, you agree to our <span>Terms</span>, Data policy and Cookies Policy.")
@@ -27,16 +27,16 @@ export let signup = () => {
 
     ),
     createElement('div',{class:"signup-page-signup-container"},
-createElement('p', null, "Have an account?"),
-createElement('a',{class:"signup-page-signUp", href:"http://localhost:9000/signup"}, "Log in"),
+    createElement('p', null, "Have an account?"),
+    createElement('a',{class:"signup-page-signUp", href:"http://localhost:9000/"}, "Log in"),
 ),
 
-createElement('p', {class:"get-app-signup"}, "Get the app."),
-createElement('div', {class:"store-links"},
-createElement('a',{href:"https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"},
-createElement('img',{src:"https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"})),
-createElement('a',{href:"https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"},
-createElement('img',{src:"https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"}),)
+    createElement('p', {class:"get-app-signup"}, "Get the app."),
+    createElement('div', {class:"store-links"},
+    createElement('a',{href:"https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"},
+    createElement('img',{src:"https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"})),
+    createElement('a',{href:"https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"},
+    createElement('img',{src:"https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"}),)
 )
     ),
     footer(), footerpostSecondary())

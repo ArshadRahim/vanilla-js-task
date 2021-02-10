@@ -6,7 +6,6 @@ import './css/main.css';
 const App = () => {
     const main = createElement('div',null);
     const layout= createElement('div',null,Layout());
-    main.appendChild(Header());
     main.appendChild(layout);
     return main;
 

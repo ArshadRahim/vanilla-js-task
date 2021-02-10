@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  align-items: center;
+  border-bottom: solid 1px #dbdbdb;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.header-profile-image {
+  border-radius: 50%;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.menuList {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.menuList i {
+  color: black;
+  font-size: 22px;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+
+.menuList i:focus {
+  background-color: black;
+  color: black;
+}
+
+.insta-img {
+  cursor: pointer;
+  margin-top: 4px;
+  width: 110px;
+  height: 36px;
+}
+
+.searchbar-div {
+  margin-left: 100px;
+}
+
+.searchInput {
+  text-align: center;
+  margin: auto;
+  width: 120%;
+  height: 26px;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+  outline: 0;
+}

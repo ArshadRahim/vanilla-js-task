@@ -1,0 +1,40 @@
+.stories {
+    width: 100%;
+    margin: 30px 0px;
+    text-align: center;
+  }
+  .name-para {
+    font-size: 12px;
+  }
+  .stories .story-div {
+    cursor: pointer;
+    padding-right:10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  .stories .story-div img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: rgb(216, 0, 58) solid 2.9px;
+  }
+  .new {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    border: 1px solid #dbdbdb;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .stories .story-div img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    .name-para {
+      font-size: 8px;
+    }
+  }
